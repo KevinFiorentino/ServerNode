@@ -71,7 +71,7 @@ servidor
                     console.log("1 document inserted");
                     db.close();
                   });
-                res.send("OK")
+                res.send({ status: '200' })
 
             }
 
