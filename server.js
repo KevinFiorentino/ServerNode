@@ -2,7 +2,12 @@
 const express = require("express");
 let mongoClient = require('mongodb').MongoClient;
 
+const cors = require('cors');
+
 servidor = express();
+
+servidor.use(cors());
+servidor.options('*', cors());
 
 const userBd = "GAK"; 
 const passBd = "9VBNbGNJuoWiHhtT";
