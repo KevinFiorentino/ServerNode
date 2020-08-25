@@ -75,6 +75,6 @@ servidor
       
     })
 
-    .listen(8887,()=>{
+    .listen(process.env.PORT || 8887,()=>{
         console.log("Escuchando el puerto 8887 con exito");
     });
